@@ -1,0 +1,16 @@
+Dalam OO, tipe abstrak dapat dimanipulasi tanpa melakukan representasi internal. 
+Misalnya, Nomor Telepon sebagai abstraksi nomor telepon dapat dioperasikan tanpa klien mengetahui bahwa kode tersebut terdiri dari kode negara, kode area, dan nomor sebenarnya. 
+Abstraksi paling berguna dalam tahap analisis dan perancangan karena memungkinkan Anda berbicara dalam hal tipe data abstrak.
+(misal: Nomor Telepon) tanpa harus khawatir bagaimana hal itu akan diimplementasikan.
+Tipe yang lebih sering dipakai string.
+string adalah abstraksi teks: Anda memanipulasi string tanpa mengetahui bagaimana penerapannya. Abstraksi string memungkinkan internal-nya diubah tanpa mempengaruhi penggunaannya dalam desain aplikasi.
+
+Enkapsulasi yang baik berlaku untuk menyembunyikan informasi, untuk memberlakukan batasan rincian. 
+Misalnya, Mobil saya terdiri dari semua bagiannya, namun hanya memberi si pengemudi sebuah antarmuka yang sesuai dengan kebutuhannya. Pengemudi bisa mengendalikan pintu, jendela, lampu, arah gerakan, mempercepat, melambat, dll. 
+Meski si pengemudi mungkin penasaran untuk memanipulasi rincian "bagaimana" semua hal itu bisa terjadi, enkapsulasi mencegah si pengemudi melihat itu lebih banyak.
+
+Hiding Information dan encapsulation adalah dua cara di mana tipe data abstrak dapat diimplementasikan. 
+Tipe data abstrak bahkan mungkin tidak harus menyembunyikan keadaan internalnya atau enkapsulasinya; Misalnya, Number sebagai abstraksi dapat diimplementasikan sebagai int.
+Hiding Information adalah ketika programmer secara khusus memutuskan untuk membatasi akses terhadap rincian pelaksanaan. 
+Ini adalah prinsip yang lebih tua dari pada desain berorientasi objek, namun sering digunakan.
+Contoh sederhana adalah mendefinisikan konstanta di C, misalnya, #define NAME_SIZE 15 Kode (klien) konstan tidak perlu diketahui nilainya, dan tidak akan bermasalah jika si programmer memutuskan untuk mengubah nilainya nanti. . Mereka seharusnya tidak membuat asumsi tentang fakta bahwa itu benar-benar 15, karena Anda mungkin memutuskan untuk mengubahnya.
